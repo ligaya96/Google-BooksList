@@ -67,13 +67,6 @@ const bookSeed = [
     date: new Date(Date.now())
   },
   {
-    title: "Astrophysics for People in a Hurry",
-    author: "Neil deGrasse Tyson",
-    synopsis:
-      "What is the nature of space and time? How do we fit within the universe? How does the universe fit within us? There's no better guide through these mind-expanding questions than acclaimed astrophysicist and best-selling author Neil deGrasse Tyson. But today, few of us have time to contemplate the cosmos. So Tyson brings the universe down to Earth succinctly and clearly, with sparkling wit, in digestible chapters consumable anytime and anywhere in your busy day. While waiting for your morning coffee to brew, or while waiting for the bus, the train, or the plane to arrive, Astrophysics for People in a Hurry will reveal just what you need to be fluent and ready for the next cosmic headlines: from the big bang to black holes, from quarks to quantum mechanics, and from the search for planets to the search for life in the universe.",
-    date: new Date(Date.now())
-  },
-  {
     title: "1984",
     author: "George Orwell",
     synopsis:
