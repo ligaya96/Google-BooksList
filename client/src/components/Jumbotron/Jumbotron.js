@@ -1,13 +1,18 @@
 import React from "react";
+import Jumbotron from "react-bootstrap/Jumbotron"
+import Container from "react-bootstrap/Container";
 
-function Jumbotron({ children }) {
+function Jumbotron() {
   return (
-    <div
+    <Jumbotron
       style={{ height: 300, clear: "both", paddingTop: 120, textAlign: "center" }}
       className="jumbotron"
     >
-      {children}
-    </div>
+     <Container className="text-center">
+        <h1 className="display-4">My Booklist (Google)</h1>
+        <p className="lead"> Save Books Or Search for Books? </p>
+      </Container>
+    </Jumbotron>
   );
 }
 
