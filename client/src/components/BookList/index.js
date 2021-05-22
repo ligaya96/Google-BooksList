@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./style.css";
 
-Function Booklist (props) {
+function Booklist (props) {
     return( 
         <Col> 
         <Row key = {props.id} className = "card">
