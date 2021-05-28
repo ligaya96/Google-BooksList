@@ -1,5 +1,5 @@
 # Google-Book List 
-Using MERN as reference, this Google Books List application will allow the user to search and save books. The book will display and have a breif description of the book, as well as display the author and other refernce. This Google Books list uses Goole Book API to search and view books. 
+This Google Book-List application will allow the user to search and save books. The book will display and have a breif description of the book, as well as display the author and other refernce. This Google Book-list uses Google Book API to search and view books. 
 
 # Installation
 <Ul>
