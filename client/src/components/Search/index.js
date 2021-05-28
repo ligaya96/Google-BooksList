@@ -11,10 +11,22 @@ function Search(props) {
                     <h1>Books</h1>
                     <div className ="input-group">
                         <input>
+                         className="form-control mr-sm-2"
+                         onChange={props.handleInputChange}
+                         value={props.value}
+                         type="search"
+                         placeholder=" Google Search books..."
+                         aria-label="Search"
                         </input>
+                        <Button
+                       onClick={props.handleFormSubmit}
+                         className="submit-btn"
+                           size="lg"
+                          type="submit" ></Button>
                     </div>
                 </div>
             </div>
         </section>
     )
 }
+export default Search;
