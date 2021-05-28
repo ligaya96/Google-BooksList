@@ -34,16 +34,14 @@ function saveBook(id){
         description: book.volumeInfo.description,
         image: book.volumeInfo.imageLinks.thumbnail,
         link: book.volumeInfo.infoLink,
-      })
-}
+ })
+
 return (
   <Container fluid>
     <Jumbotron />
     <Search
-      handleFormSubmit={handleFormSubmit}
-      handleInputChange={handleInputChange}
-    />
-    <Container fluid id="book-box">
+      handleFormSubmit={handleFormSubmit} handleInputChange={handleInputChange}/>
+    <Container>
       <Row>
         <h1>Your Results </h1>
       </Row>
@@ -58,7 +56,7 @@ return (
             image={book.volumeInfo.imageLink }
             link={book.volumeInfo.infoLink}
             rating={book.volumeInfo.averageRating}
-            onClick={() => saveBook(book.id)}
+            onClick={() => saveBook(id)}
             label="Save"
             bgColor="#f4a451"
           />
@@ -67,5 +65,6 @@ return (
     </Container>
   </Container>
 );
+}
 
 export default Search;

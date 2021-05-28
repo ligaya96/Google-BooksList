@@ -21,7 +21,6 @@ function Search(props) {
                         <Button
                        onClick={props.handleFormSubmit}
                          className="submit-btn"
-                           size="lg"
                           type="submit" ></Button>
                     </div>
                 </div>

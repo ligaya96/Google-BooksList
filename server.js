@@ -15,6 +15,10 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
+//app routes
+app.use(routes);
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI ||"mongodb://localhost/bookslist", {
@@ -24,10 +28,7 @@ mongoose.connect(process.env.MONGODB_URI ||"mongodb://localhost/bookslist", {
   useUnifiedTopology: true  
 }).then(() => console.log("   ***** MongoDB Connected *****"))
   .catch(err => console.log(err));
-//app routes
-  app.use(routes);
-  app.use(express.urlencoded({ extended: true }));
-  app.use(express.json());
+
 
 
 app.listen(PORT, function() {
