@@ -10,14 +10,14 @@ function Search(props) {
                 <div>
                     <h1>Books</h1>
                     <div className ="input-group">
-                        <input>
+                        <input
                          className="form-control mr-sm-2"
                          onChange={props.handleInputChange}
                          value={props.value}
                          type="search"
                          placeholder=" Google Search books..."
                          aria-label="Search"
-                        </input>
+                       />
                         <Button
                        onClick={props.handleFormSubmit}
                          className="submit-btn"

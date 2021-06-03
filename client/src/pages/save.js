@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Jumbotron from "../../components/Jumbotron";
-import API from "../../utils/API";
+import Jumbotron from "../components/Jumbotron";
+import API from "../utils/API";
 import BookList from "../components/BookList"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -10,11 +10,10 @@ function save() {
   const [books, setBooks] = useState([]);
   // Load all books and store them with setBooks
   useEffect(() => {
-    loadBooks(id);
   }, [])
 
   // Loads all books and sets them to books
-  function loadBooks(id) {
+  function loadBooks() {
     API.getALLBooks()
       .then(res =>  setBooks(res.data))
       .catch(err => console.log(err));
@@ -41,7 +40,7 @@ return (
               description={book.description}
               image={book.image}
               link={book.link}
-              onClick={() => deleteBook(book)}
+              onClick={() => deleteBook(book.id)}
               label="Delete"
               display="none"
             ></BookList>

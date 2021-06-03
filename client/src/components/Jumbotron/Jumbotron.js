@@ -2,7 +2,7 @@ import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from "react-bootstrap/Container";
 
-function Jumbotron() {
+function Jumbo() {
   return (
     <Jumbotron
       style={{ height: 300, clear: "both", paddingTop: 120, textAlign: "center" }}
@@ -15,5 +15,4 @@ function Jumbotron() {
     </Jumbotron>
   );
 }
-
-export default Jumbotron;
+export default Jumbo;

@@ -22,4 +22,3 @@ export default {
     return axios.post("/api/books", bookData);
   }
 };
-export default exportedObject;

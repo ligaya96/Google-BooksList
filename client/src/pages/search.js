@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Jumbotron from "../../components/Jumbotron";
+import Jumbotron from "../components/Jumbotron";
 import Search from "../components/Search";
-import API from "../../utils/API";
+import API from "../utils/API";
 import BookList from "../components/BookList"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 // trying to intialize our state
-function Search() {
+function search() {
     const [books, setBooks] = useState([]);
     const [ query, setQuery] = useState("");
     function handleInputChange(event) {
@@ -56,7 +56,7 @@ return (
             image={book.volumeInfo.imageLink }
             link={book.volumeInfo.infoLink}
             rating={book.volumeInfo.averageRating}
-            onClick={() => saveBook(id)}
+            onClick={() => saveBook(book.id)}
             label="Save"
           />
         ))}
@@ -66,4 +66,4 @@ return (
 );
 }
 
-export default Search;
+export default search;

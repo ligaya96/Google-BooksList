@@ -1,6 +1,6 @@
 // For Book List
 import React from "react";
-import Btn from "../Btn";
+import Btn from "../Btn/btn";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./style.css";
