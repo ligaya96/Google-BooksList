@@ -12,7 +12,7 @@ function Search() {
     function handleInputChange(event) {
         setQuery(event.target.value);
       }
-}
+
 // saving book data. 
 function handleFormSubmit(event){
     event.preventDefault();
@@ -35,7 +35,7 @@ function saveBook(id){
         image: book.volumeInfo.imageLinks.thumbnail,
         link: book.volumeInfo.infoLink,
  })
-
+}
 return (
   <Container fluid>
     <Jumbotron />
@@ -58,7 +58,6 @@ return (
             rating={book.volumeInfo.averageRating}
             onClick={() => saveBook(id)}
             label="Save"
-            bgColor="#f4a451"
           />
         ))}
       </Row>

@@ -7,27 +7,23 @@ import Row from "react-bootstrap/Row";
 
 function save() {
   // Setting our component's initial state
-  const [books, setBooks] = useState([])
+  const [books, setBooks] = useState([]);
   // Load all books and store them with setBooks
   useEffect(() => {
-    loadBooks()
+    loadBooks(id);
   }, [])
 
   // Loads all books and sets them to books
-  function loadBooks() {
+  function loadBooks(id) {
     API.getALLBooks()
-      .then(res => 
-        setBooks(res.data)
-      )
+      .then(res =>  setBooks(res.data))
       .catch(err => console.log(err));
-  };
-
+  }
   // Deletes a book from the database with a given id, then reloads books from the db
   function deleteBook(book) {
-    API.deleteBook(id)
+    API.deleteBook(book.id)
       .then(res => loadBooks())
       .catch(err => console.log(err));
-      loadBooks();
   }
 return (
 <Container fluid>
@@ -47,7 +43,6 @@ return (
               link={book.link}
               onClick={() => deleteBook(book)}
               label="Delete"
-              bgColor="#AC3117"
               display="none"
             ></BookList>
           ))}
