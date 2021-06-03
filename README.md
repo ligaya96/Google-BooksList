@@ -12,10 +12,11 @@ This Google Book-List application will allow the user to search and save books. 
 </Ul>
 
 # Heroku Link
+<a href=></a>
 
 
 # Author
 Ligaya Herndon
 
 # ScreenShot
-<img src=".booklistScreenshot.png" alt="ScreenshotGoogle">
+<img src="./booklistScreenshot.png" alt="ScreenshotGoogle">
